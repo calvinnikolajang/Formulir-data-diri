@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulir Data Diri</title>
+  </head>
+  <body>
+    <h1>Formulir Data Diri</h1>
+    <form method="POST" action="submit.php" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Informasi Personal</legend>
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" name="phone" id="phone" required><br>
+
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" name="dob" id="dob" required><br>
+
+        <label for="gender">Jenis Kelamin:</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Laki-laki</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Perempuan</label><br>
+
+        <label for="address">Alamat:</label>
+        <textarea name="address" id="address" required></textarea><br>
+
+        <label for="photo">Foto:</label>
+        <input type="file" name="photo" id="photo">
+      </fieldset>
+
+      <fieldset>
+        <legend>Informasi Pendidikan</legend>
+        <label for="education">Pendidikan Terakhir:</label>
+        <select name="education" id="education" required>
+          <option value="">Pilih</option>
+          <option value="SD">SD</option>
+          <option value="SMP">SMP</option>
+          <option value="SMA">SMA</option>
+          <option value="D3">D3</option>
+          <option value="S1">S1</option>
+          <option value="S2">S2</option>
+          <option value="S3">S3</option>
+        </select><br>
+
+        <label for="major">Jurusan:</label>
+        <input type="text" name="major" id="major"><br>
+
+        <label for="institution">Institusi:</label>
+        <input type="text" name="institution" id="institution"><br>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
